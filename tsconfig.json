@@ -1,0 +1,25 @@
+{
+  
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "module": "nodenext",
+    "target": "esnext",
+   
+    "sourceMap": true,
+    
+    
+ 
+    "strict": true,
+    
+    "esModuleInterop": true,
+    "moduleDetection": "force",
+"forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "verbatimModuleSyntax": false,
+    "declaration": true,
+    //"emitDeclarationOnly":true,
+    //"allowImportingTsExtensions": true
+  },
+ "include": ["src"]
+}
