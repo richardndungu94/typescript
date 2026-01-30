@@ -15,7 +15,7 @@ console.log(error);
 
 const app = express();
 app.get("/", (req: Request, res: Response) => {
-    return res.json({message:"This is your application!"});
+    return res.json({message:"Richard Ndung'u: Axia Africa !"});
 });
 
 app.use(express.json());
