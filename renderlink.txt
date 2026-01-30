@@ -1,0 +1,7 @@
+Render link: https://typescript-ntcb.onrender.com/
+
+End points
+users
+https://typescript-ntcb.onrender.com/users
+one User
+https://typescript-ntcb.onrender.com/user/697cf3c6a5b35524ceffef45
