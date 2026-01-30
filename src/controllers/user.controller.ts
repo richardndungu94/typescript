@@ -6,9 +6,9 @@ export const createUser = async(req:Request,res:Response) =>{
     const {username,email,password,gender} = req.body;
     const newUser = new userModel(req.body);
     const savedUser = await newUser.save();
-    return res.status(201).json(savedUser);
+    return res.status(200).json(savedUser);
     }catch(error){
-        console.log(error);
+    
         return res.status(401).json({message:"Something went wrong"})
     }
 };
@@ -18,7 +18,7 @@ export const getUser = async(req:Request,res:Response) =>{
     const user = await userModel.findById(id.trim());
     return res.status(200).json(user);
     }catch(error){
-        console.log(error);
+      
         return res.status(401).json({message:"Something went wrong"})
     }
 };
@@ -41,7 +41,7 @@ export const updateUser = async(req:Request,res:Response) =>{
     return res.status(200).json(updatedUser);
 
    }catch(error){
-    console.log(error)
+   
     return res.status(401).json({message:"Something went wrong"})
     }
 };
